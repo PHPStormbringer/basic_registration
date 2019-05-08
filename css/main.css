@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* INIT - Global */
+.brand_logo{margin:auto}
+.branded_bkgd { width:100%; height:100%;width:100%; background-color:#3399cc; }
+.login_container { width:300px;margin:30px auto;padding:15px 25px;border:solid 1px white};
+
+
+/* EXIT - Global */
+/* INIT - Login */
+
+
+/* EXIT - Login */
+/* INIT - Regis */
+
+.error_message {font-style:italic;color:red; }
+
+.input_caption {display:none;}
+.input_caption.perm {display:block;}
+
+input[type="text"] {
+    width: 290px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 290px;
+	height: 50px;
+    margin-bottom: 10px;
+}
+
+
+#org_state, #pay_state, #state{ width:186px; height: 27px; }
+#org_zip, #pay_zip, #zip  { width: 100px; }
+
+#specialty{
+    width: 290px;height:27px;
+    margin-bottom: 10px;
+}
+
+#fname  {width:198px}
+
+#mi {width:30px;}
+
+@media only screen and (min-width: 480px) 
+{
+
+	.error_message {font-style:italic;color:red; }
+	.input_caption {display:block;margin-top:10px;}
+
+	input[type="text"] {
+		width: 212px;
+		margin-bottom: 10px;
+	}
+	
+	#org_state, #pay_state, #state{ width:130px; height: 27px; }
+	#org_zip, #pay_zip, #zip  { width: 78px; }
+	
+	#specialty{
+		width: 212px;height:27px;
+		margin-bottom: 10px;
+	}
+	
+	#fname  {width:130px}
+	
+	#mi {width:20px;}
+
+	.input_caption#caption_state { display:inline-block;width:130px; }
+	.input_caption#caption_zip   { display:inline-block; }
+}
+
+/* EXIT - Regis */
+
+
+/* obsolete */
+.envelop { width:1000px;margin:auto; border-radius: 25px;border:solid 0px red; }
+.basic_registration { width:860px;margin:20px auto;padding:20px; border-radius: 25px;border:solid 0px red; }
+
+.basic_registration .input_group { margin-bottom:20px;}
+
+
+
+
+
+.basic_registration .menu_item_box { 
+	width:150px;
+	height:30px; 
+	border:solid 1px green; 
+	border-radius: 5px; 
+	margin: 0 20px; 
+	display:inline-block;
+}
+.basic_registration a div.menu_item { text-align:center;}
+
+.basic_registration .error_message 
+{ 
+	color:red; 
+	font-style:italic; 
+	font-size:10px; 
+	font-weight:bold; 
+}
+
+.basic_registration .input_caption {display:block} 
+
+#inner_login_box {position:absolute;border:solid 1px red;top:-200px;left:200px;height:300px}
+
+/*
+#ig_title{display:none;position:absolute;left: 10px;top:850px}
+#ig_fname{position:absolute;left: 10px;top:150px}
+#ig_mi   {position:absolute;left:220px;top:150px;width:15px;}
+	#ig_mi input  {width:15px;}
+
+#ig_lname{position:absolute;left:250px;top:150px}
+#ig_degrees{position:absolute;left: 10px;top:200px}
+*/
+
+
+#ig_email{position:absolute;left:10px;top:100px}
+#ig_email_preferred{position:absolute;left:10px;top:700px}
+#ig_phone{position:absolute;left:10px;top:600px}
+#ig_cell{position:absolute;left:10px;top:650px}
+#ig_pro_titles{position:absolute;left:10px;top:250px}
+
+
+#ig_state_licensed{position:absolute;left:410px;top:500px}
+#ig_license_number{position:absolute;left:410px;top:550px}
+#ig_hcp_nci_number{position:absolute;left:410px;top:600px}
+
+#ig_emergency_contact_name{position:absolute;left:410px;top:650px}
+#ig_emergency_contact_phone{position:absolute;left:410px;top:700px}
+#ig_emergency_contact_email{position:absolute;left:410px;top:750px}
+
+#ig_organization{position:absolute;left:10px;top:300px}
+#ig_organization_addr_1{position:absolute;left:10px;top:350px}
+#ig_organization_addr_2{position:absolute;left:10px;top:400px}
+#ig_organization_city{position:absolute;left:10px;top:450px}
+#ig_organization_state{position:absolute;left:10px;top:500px}
+#ig_organization_zip{position:absolute;left:10px;top:550px}
+
+#ig_payment_addr_1{position:absolute;left:410px;top:200px}
+#ig_payment_addr_2{position:absolute;left:410px;top:250px}
+#ig_payment_city{position:absolute;left:410px;top:300px}
+#ig_payment_state{position:absolute;left:410px;top:350px}
+#ig_payment_zip{position:absolute;left:410px;top:400px}
+
+#ig_comments{position:absolute;left:10px;top:900px}
+#ig_special_needs{position:absolute;left:410px;top:900px}
+#ig_hotel{position:absolute;left:10px;top:850px}
+
+#event_city {position:absolute;left:310px;top: 60px}
+#event_date {position:absolute;left: 10px;top: 60px}
+#hotel_name {position:absolute;left:610px;top: 60px}
+	#hotel_name .header_caption{ width:100px;float:left }
+	#hotel_name .header_data   { float:right }
+	
+#hotel_addr {position:absolute;left:610px;top: 80px}
+	#hotel_addr .header_caption{ width:100px;float:left }
+	#hotel_addr .header_data   { float:right }
+
+#hotel_phone{position:absolute;left:610px;top:100px}
+	#hotel_phone .header_caption{ width:100px;float:left }
+	#hotel_phone .header_data   { float:right }
+
+/* Not used for HERONTX */
+
+#ig_specialty{display:none;position:absolute;left:10px;top:1000px}
+#ig_personal_addr_1{display:none;position:absolute;left:10px;top:800px}
+#ig_personal_addr_2{display:none;position:absolute;left:10px;top:850px}
+#ig_personal_city{display:none;position:absolute;left:10px;top:900px}
+#ig_personal_state{display:none;position:absolute;left:10px;top:950px}
+#ig_personal_zip{display:none;position:absolute;left:10px;top:1000px}
